@@ -83,11 +83,8 @@ public class frmPrincipal extends JFrame implements ActionListener{
 		btnSalir.setActionCommand("Salir");
 		panel.add(btnSalir);
 			
-		
-		this.setResizable(false);
-		
-		
-		
+		this.setResizable(true);		
+			
 	}
 	
 	
@@ -95,18 +92,22 @@ public class frmPrincipal extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		
 		
-		/*switch(e.getActionCommand()){
+		switch(e.getActionCommand()){
 		
 		
 		case "Registrarse":
+			
+			VentanaInicial ventanaInicial = new VentanaInicial();
+			ventanaInicial.setVisible(true); 
 			
 			break;
 			
 					
 		case "Salir":
-			
+			System.out.println("Cerrando programa...");
+			System.exit(0);
 			break;
 			
-		}*/
+		}
 	}
 }
