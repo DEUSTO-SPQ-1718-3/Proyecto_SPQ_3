@@ -16,18 +16,13 @@ import javax.swing.UIManager;
 
 public class frmPrincipal extends JFrame implements ActionListener{
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 7046431761927583577L;
 	
 	private JPanel contentPane;
 	private JTextField textField_1;
 	private JTextField textField_2;
 	
 	public frmPrincipal() {
-	
-		
+			
 		setBounds(400, 400, 430, 230); //Tamaño
 		
 		setTitle("MI ACADEMIA");
@@ -83,7 +78,7 @@ public class frmPrincipal extends JFrame implements ActionListener{
 		btnSalir.setActionCommand("Salir");
 		panel.add(btnSalir);
 			
-		this.setResizable(true);		
+		this.setResizable(false);		
 			
 	}
 	
@@ -97,8 +92,8 @@ public class frmPrincipal extends JFrame implements ActionListener{
 		
 		case "Registrarse":
 			
-			VentanaInicial ventanaInicial = new VentanaInicial();
-			ventanaInicial.setVisible(true); 
+			VentanaInicial ventana = new VentanaInicial();
+			ventana.setVisible(true); 
 			
 			break;
 			

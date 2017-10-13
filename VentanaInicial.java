@@ -22,8 +22,8 @@ public class VentanaInicial extends JFrame {
 		
 		this.setResizable(false);
 		
-		JButton btnNewButton = new JButton("PROFESORES");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnProfesores = new JButton("PROFESORES");
+		btnProfesores.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				//inicializa ventana PROFESORES
@@ -31,11 +31,11 @@ public class VentanaInicial extends JFrame {
 				
 			}
 		});
-		btnNewButton.setBounds(75, 47, 153, 91);
-		contentPane.add(btnNewButton);
+		btnProfesores.setBounds(75, 47, 153, 91);
+		contentPane.add(btnProfesores);
 		
-		JButton btnNewButton_1 = new JButton("CURSOS");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		JButton btnCursos = new JButton("CURSOS");
+		btnCursos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				
@@ -44,8 +44,8 @@ public class VentanaInicial extends JFrame {
 				
 			}
 		});
-		btnNewButton_1.setBounds(294, 47, 153, 91);
-		contentPane.add(btnNewButton_1);
+		btnCursos.setBounds(294, 47, 153, 91);
+		contentPane.add(btnCursos);
 		
 		JButton btnCuotas = new JButton("CUOTAS");
 		btnCuotas.addActionListener(new ActionListener() {
@@ -58,25 +58,24 @@ public class VentanaInicial extends JFrame {
 		btnCuotas.setBounds(75, 176, 153, 91);
 		contentPane.add(btnCuotas);
 		
-		JButton btnAlumnos = new JButton("ALUMNOS");
-		btnAlumnos.addActionListener(new ActionListener() {
+		JButton btnEstudiantes = new JButton("ESTUDIANTES");
+		btnEstudiantes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				//inicializa ventana ALUMNOS
-				
+				frmEstudiantes ventanaEstudiantes = new frmEstudiantes();
+				ventanaEstudiantes.setVisible(true); 					
 				
 			}
 		});
-		btnAlumnos.setBounds(294, 176, 153, 91);
-		contentPane.add(btnAlumnos);
+		btnEstudiantes.setBounds(294, 176, 153, 91);
+		contentPane.add(btnEstudiantes);
 		
 		JButton btnUsuarios = new JButton("Usuarios");
 		btnUsuarios.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 					//inicializa ventana USUARIOS
-				
-				
+								
 			}
 		});
 		btnUsuarios.setBounds(100, 305, 100, 50);
